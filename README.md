@@ -1,4 +1,4 @@
-# Data-Science-Cheat-Sheet
+# Data-Science-Cheatsheet
 
 This cheatsheet is currently a 9-page reference in basic data science that covers basic concepts in proabability, statistics, statistical learning, machine learning, big data frameworks and SQL.
 
