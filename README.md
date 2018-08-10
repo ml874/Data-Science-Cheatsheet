@@ -6,7 +6,7 @@ The cheatsheet is loosely based off of *The Data Science Design Manual* by Steve
 
 Inspired by William Chen's *The Only Probability Cheatsheet You'll Ever Need*, located [here](https://github.com/wzchen/probability_cheatsheet).
 
-## Planned Additions
+## Future Additions
 * Feature Engineering
 * Graph Theory
 * Algorithms and Data Structures
@@ -17,11 +17,16 @@ Inspired by William Chen's *The Only Probability Cheatsheet You'll Ever Need*, l
 * Data Engineering
 
 ## Screenshots
+![](Screenshots/screenshot1.png?raw=true)
+![](Screenshots/screenshot2.png?raw=true)
 
 
 ## License
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/>
+
+## Changlog
+**2018-08-10**: Added Data Science Cheat Sheet
 
 ## Contact
 Feel free to suggest comments, updates, and potential improvements!
