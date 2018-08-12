@@ -25,7 +25,7 @@
 \usepackage{graphicx}
 \usepackage{tabu}
 
-\title{Data Science Cheat Sheet}
+\title{Data Science Cheatsheet}
 \usepackage[brazilian]{babel}
 \usepackage[utf8]{inputenc}
 
@@ -223,14 +223,62 @@
         \item Nearest Neighbor: fill in missing data using similar data points
         \item Interpolation: use a method like linear regression to predict the value of the missing data\\
     \end{itemize}
-    
-    \textbf{Outlier Detection} Outliers can interfere with analysis and often arise from mistakes during data collection. It makes sense to run a "sanity check".\\
+
+    {\color{blue} \textbf{Outlier Detection}}\\
+    Outliers can interfere with analysis and often arise from mistakes during data collection. It makes sense to run a "sanity check".\\
+       
+    {\color{blue} \textbf{Miscellaneous}}\\
+    Lowercasing, removing non-alphanumeric, repairing, unidecode, removing unknown characters\\
     
     \textit{Note:} When cleaning data, always maintain both the raw data and the cleaned version(s). The raw data should be kept intact and preserved for future use. Any type of data cleaning/analysis should be done on a copy of the raw data. 
     \end{minipage}
 };
 \node[fancytitle, right=10pt] at (box.north west) {Data Cleaning};
 \end{tikzpicture}
+
+
+% ------------ Feature Engineering -----------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \setlist{nolistsep}	
+    
+    Feature engineering is the process of using domain knowledge to create features or input variables that help machine learning algorithms perform better. Done correctly, it can help increase the predictive power of your models. Feature engineering is more of an art than science. FE is one of the most important steps in creating a good model. As Andrew Ng puts it:
+    \begin{center}
+    \textit{“Coming up with features is difficult, time-consuming, requires expert knowledge. ‘Applied machine learning’ is basically feature engineering.”}
+    \end{center}
+    
+    {\color{blue} \textbf{Continuous Data}}\\
+    \textbf{Raw Measures}: data that hasn't been transformed yet\\
+    \textbf{Rounding}: sometimes precision is noise; round to nearest integer, decimal etc..\\
+    \textbf{Scaling}: log, z-score, minmax scale\\
+    Imputation: fill in missing values using mean, median, model output, etc..\\
+    \textbf{Binning}: transforming numeric features into categorical ones (or binned) e.g. values between 1-10 belong to A, between 10-20 belong to B, etc.\\
+    \textbf{Interactions}: interactions between features: e.g. subtraction, addition, multiplication, statistical test\\
+    \textbf{Statistical}: log/power transform (helps turn skewed distributions more normal), Box-Cox\\
+    \textbf{Row Statistics}: number of NaN's, 0's, negative values, max, min, etc\\
+     \textbf{Dimensionality Reduction}: using PCA, clustering, factor analysis etc\\
+
+    {\color{blue} \textbf{Discrete Data}}\\
+    \textbf{Encoding}: since some ML algorithms cannot work on categorical data, we need to turn categorical data into numerical data or vectors\\
+    \textbf{Ordinal Values}: convert each distinct feature into a random number (e.g. [r,g,b] becomes [1,2,3])\\
+    \textbf{One-Hot Encoding}: each of the m features becomes a vector of length m with containing only one 1 (e.g. [r, g, b] becomes [[1,0,0],[0,1,0],[0,0,1]])\\
+    \textbf{Feature Hashing Scheme:} turns arbitrary features into indices in a vector or matrix\\
+    \textbf{Embeddings}: if using words, convert words to vectors (word embeddings)
+    
+
+    
+    
+
+
+    
+%     \includegraphics[width=\textwidth]{}
+
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Feature Engineering};
+\end{tikzpicture}
+% ------------------------------------------------------------------------
 
 
 
