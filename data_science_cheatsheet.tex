@@ -24,9 +24,11 @@
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage{tabu}
+\usepackage{minted}
+
 
 \title{Data Science Cheatsheet}
-\usepackage[brazilian]{babel}
+\usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 
 \advance\topmargin-.8in
@@ -42,7 +44,7 @@
 
 \begin{center}{\huge{\textbf{Data Science Cheatsheet}}}\\
 {\large Compiled by Maverick Lin (\url{http://mavericklin.com})}\\
-{\normalsize Last Updated August 10, 2018}
+{\normalsize Last Updated \today}
 \end{center}
 \begin{multicols*}{3}
 
@@ -1079,6 +1081,63 @@ where C(X) is the prediction returned for input X.
 \end{tikzpicture}
 
 
+
+% ------------ Python- Data Structures -----------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \setlist{nolistsep}	
+    
+    Data structures are a way of storing and manipulating data and each data structure has its own strengths and weaknesses. Combined with algorithms, data structures allow us to efficiently solve problems. It is important to know the main types of data structures that you will need to efficiently solve problems.\\
+    
+    \textbf{Lists}: or arrays, ordered sequences of objects, mutable
+    \begin{minted}{python} 
+	>>> l = [42, 3.14, "hello","world"] 
+    \end{minted}
+    
+    \textbf{Tuples}: like lists, but immutable 
+    \begin{minted}{python} 
+    >>> t = (42, 3.14, "hello","world") 
+    \end{minted}
+    
+    \textbf{Dictionaries}: hash tables, key-value pairs, unsorted
+    \begin{minted}{python} 
+    >>> d = {"life": 42, "pi": 3.14}
+    \end{minted}
+    
+    \textbf{Sets}: mutable, unordered sequence of unique elements. frozensets are just immutable sets  
+    \begin{minted}{python} 
+    >>> s = set([42, 3.14, "hello","world"]) 
+    \end{minted}
+
+    {\color{blue} \textbf{Collections Module}}\\
+    \textbf{deque}:  double-ended queue, generalization of stacks and queues; supports append, appendLeft, pop, rotate, etc
+    \begin{minted}{python} 
+    >>> s = deque([42, 3.14, "hello","world"]) 
+    \end{minted}
+    
+    \textbf{Counter}: dict subclass, unordered collection where elements are stored as keys and counts stored as values
+    \begin{minted}{python} 
+    >>> c = Counter('apple')
+    >>> print(c)
+    Counter({'p': 2, 'a': 1, 'l': 1, 'e': 1})
+    \end{minted}
+    
+    {\color{blue} \textbf{heqpq Module}}\\
+    \textbf{Heap Queue}: priority queue, heaps are binary trees for which every parent node has a value greater than or equal to any of its children (max-heap), order is important; supports push, pop, pushpop, heapify, replace functionality
+    \begin{minted}{python} 
+    >>> heap = []
+    >>> for n in data:
+    ...     heappush(heap, n)
+    >>> heap 
+    [0, 1, 3, 6, 2, 8, 4, 7, 9, 5]
+    \end{minted}
+    
+    \includegraphics[width=\textwidth, height=3.5cm]{Figures/heaps.png}
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Python- Data Structures};
+\end{tikzpicture}
 
 
  
