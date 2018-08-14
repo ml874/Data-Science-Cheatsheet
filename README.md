@@ -24,7 +24,7 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/>
 
 ## Changelog
-**2018-08-12** Added Python Data Structures Section
+**2018-08-13** Added Python Data Structures Section
 
 **2018-08-12** Added Feature Engineering Section
 
