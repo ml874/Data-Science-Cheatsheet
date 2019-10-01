@@ -164,8 +164,10 @@
   	\textbf{Mode} Most frequent element in a dataset.\\
     
     {\color{blue} \textbf{Variability}}\\
-	\textbf{Standard Deviation } Measures the squares differences between the individual elements and the mean\\
+	\textbf{Standard Deviation } Measures the squares differences between the individual elements and the mean.
+    For a \textit{sample} from some population, this is calculated by the following:\\
     \centerline{$\sigma = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1}}$}\\
+    To calculate it for a \textit{population}, replace the denominator with $N$.\\
     \textbf{Variance} V = $\sigma^2$\\
     
 %    	{\color{blue} \textbf{Characterizing Distributions}}\\
@@ -307,7 +309,7 @@
     \begin{minipage}{0.3\textwidth}
         \textbf{Binomial Distribution} (Discrete)\\
         Assume X is distributed Bin(n,p). X is the number of "successes" that we will achieve in n independent trials, where each trial is either a success or failure and each success occurs with the same probability p and each failure occurs with probability q=1-p.\\
-        PDF: $P(X=x) =  \binom{n}{k} p^x (1-p)^{n-x}$\\
+        PMF: $P(X=x) =  \binom{n}{k} p^x (1-p)^{n-x}$\\
         EV: $\mu = np$ \space\space Variance = npq
         \newline
         
@@ -319,9 +321,9 @@
 
         \textbf{Poisson Distribution} (Discrete)\\
         Assume X is distributed Pois($\lambda$). Poisson expresses the probability of a given number of events occurring in a fixed interval of time/space if these events occur independently and with a known constant rate $\lambda$.\\
-        PDF: $P\left( x \right) = \frac{{e^{ - \lambda } \lambda ^x }}{{x!}}$ \space\space EV: $\lambda$ \space\space Variance = $\lambda$\\
+        PMF: $P\left( x \right) = \frac{{e^{ - \lambda } \lambda ^x }}{{x!}}$ \space\space EV: $\lambda$ \space\space Variance = $\lambda$\\
         \newline
-        \textbf{Power Law Distributions} (Discrete)\\
+        \textbf{Power Law Distributions} (Continuous)\\
         Many data distributions have much longer tails than the normal or Poisson distributions. In other words, the change in one quantity varies as a \textit{power} of another quantity. It helps measure the inequality in the world. e.g. wealth, word frequency and Pareto Principle (80/20 Rule) \\
         PDF: P(X=x) = c$x^{-\alpha}$, where $\alpha$ is the law's exponent and c is the normalizing constant
       	\begin{center}
