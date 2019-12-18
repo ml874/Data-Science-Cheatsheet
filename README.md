@@ -1,5 +1,5 @@
 
-**Update (2019-12-18)**: The *Data Science Cheatsheet* has evovled into a book! Check out *Cracking the Data Science Interview* [here](https://www.amazon.com/dp/171068013X/ref=sr_1_8?keywords=cracking+the+data+science+interview&qid=1576688426&sr=8-8)!
+**Update (2019-12-18)**: The *Data Science Cheatsheet* has evovled into a book! Check out *Cracking the Data Science Interview* [here](https://www.amazon.com/dp/171068013X/ref=sr_1_8?keywords=cracking+the+data+science+interview&qid=1576688426&sr=8-8)! This also means that the Cheatsheet will be getting a makeover soon- stay tuned!
 
 # Data Science Cheatsheet
 This cheatsheet is currently a 9-page reference in basic data science that covers basic concepts in probability, statistics, statistical learning, machine learning, big data frameworks and SQL.
