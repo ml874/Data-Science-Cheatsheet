@@ -695,7 +695,7 @@
     {\color{blue} \textbf{Optimizing KNN}}\\
     Comparing a query point a in d dimensions against n training examples computes with a runtime of $O(nd)$, which can cause lag as points reach millions or billions. Popular choices to speed up KNN include:
     \begin{itemize}
-    	\item \textbf{Vernoi Diagrams}: partitioning plane into regions based on distance to points in a specific subset of the plane 
+    	\item \textbf{Voronoi Diagrams}: partitioning plane into regions based on distance to points in a specific subset of the plane 
         \item \textbf{Grid Indexes}: carve up space into d-dimensional boxes or grids and calculate the NN in the same cell as the point
         \item \textbf{Locality Sensitive Hashing (LSH)}: abandons the idea of finding the exact nearest neighbors. Instead, batch up nearby points to quickly find the most appropriate bucket B for our query point. LSH is defined by a hash function $h(p)$ that takes a point/vector as input and produces a number/ code as output, such that it is likely that h(a) = h(b) if a and b are close to each other, and h(a)!= h(b) if they are far apart.
         
