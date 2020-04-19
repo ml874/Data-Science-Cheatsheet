@@ -1035,6 +1035,44 @@ where C(X) is the prediction returned for input X.
 \node[fancytitle, right=10pt] at (box.north west) {Big Data- Hadoop Ecosystem};
 \end{tikzpicture}
 
+% ------------ Python- Data Structures -----------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \setlist{nolistsep}	
+Graph theory is the study of graphs, which are structures used to model relationships between objects. For example, we can model friendships, computers, social networks, and transportation systems all as graphs. These graphs can then be analyzed to uncover hidden patterns or connections that were previously unidentifiable or calculate statistical properties of the networks and predict how the networks will evolve over time.\\
+
+\noindent Formally, a graph $G = (V, E)$ consists of a set $V$ of vertices (nodes) and a set $E$ of edges (connects two nodes together). An edge represents a relationship between the nodes it connects (friendship between 2 people, connection between 2 computers, etc.). A directed graph is where the edges have a direction or order (otherwise undirected).\\
+
+\noindent A weighted graph is a graph where the edges show the intensity of the relationships using weights:
+\begin{itemize}
+    \item \textbf{Binary Weight}: 0 or 1 weight, tells us if a link exists between 2 nodes
+    \item \textbf{Numeric Weight}: expresses how strong the connection is between a node and other nodes
+    \item \textbf{Normalized Weight}: variant of numeric weight where all the outgoing edges of a node sum to 1\\
+\end{itemize}
+
+\noindent A graph can be represented:
+\begin{itemize}
+    \item \textbf{Graphically}: a picture that displays all the nodes, edges, and weights
+    \item \textbf{Mathematically}: an adjacency matrix A of size ($n$, $n$) ($n$ nodes) and $a_{i, j} = 1$ if a link exists between nodes \textit{i} and \textit{j}, 0 otherwise. A weight matrix $W$ expresses the edge weights between nodes of a network. An adjacency list is an abstract representation of the adjacency matrix, and provides a list of all the connections present in the network (weight list is similar).\\
+\end{itemize}
+
+\noindent Applications of graph theory include:
+\begin{itemize}
+    \item \textbf{Route Optimization}: model the transportation of a commodity from one place to another
+    \item \textbf{Job Scheduling}: model and find the optimal scheduling of jobs or tasks
+    \item \textbf{Fraud Detection}: model fraud transactions and uncover rings of fraudsters working together
+    \item \textbf{Sociology and Economics}: model groups of people to see how they will act and evolve over time
+    \item \textbf{Epidemiology}: model how a disease will spread through a network and how fast it will spread\\
+
+\end{itemize}
+
+\noindent Python's NetworkX and Spark's GraphX offer graph capabilities.
+
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Graph Theory};
+\end{tikzpicture}
 
 
 % ------------ SQL Part I -----------------
