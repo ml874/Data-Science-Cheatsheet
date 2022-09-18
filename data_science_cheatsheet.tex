@@ -656,7 +656,7 @@
     
     {\color{cyan} Kullback-Leibler Divergence}: $KL(A||B)=\sum_{i=i}^{d}{a_{i}log_{2}{\frac{a_{i}}{b_{i}}}}$\\
     KL divergence measures the distances between probability distributions by measuring the uncertainty gained or uncertainty lost when replacing distribution A with distribution B. However, this is not a metric but forms the basis for the Jensen-Shannon Divergence Metric.\\
-    {\color{cyan} Jensen-Shannon}: $JS(A,B) = \frac{1}{2}KL(A||M)+ \frac{1}{2}KL(M||B)$, where M is the average of A and B. The JS function is the right metric for calculating distances between probability distributions 
+    {\color{cyan} Jensen-Shannon}: $JS(A,B) = \frac{1}{2}KL(A||M)+ \frac{1}{2}KL(B||M)$, where M is the average of A and B. The JS function is the right metric for calculating distances between probability distributions 
     \end{minipage}
 };
 \node[fancytitle, right=10pt] at (box.north west) {Distance/Network Methods};
